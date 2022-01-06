@@ -8,7 +8,8 @@ if ! command -v brew > /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
     export HOMEBREW_NO_INSECURE_REDIRECT=1
-    ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     echo "=> homebrew exists, updating ..."
     echo "=> "
