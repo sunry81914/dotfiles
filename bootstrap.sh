@@ -56,11 +56,11 @@ echo
 sw_vers
 echo
 brew --version
-python2 --version
+# python2 --version
 python3 --version
-ruby --version
+# ruby --version
 echo "node $(node --version)"
-go version
-rustc -V
+# go version
+# rustc -V
 echo
 echo "All done!"
